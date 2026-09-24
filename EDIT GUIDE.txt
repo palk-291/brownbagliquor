@@ -1,0 +1,66 @@
+BROWN BAG LIQUOR — EASY EDIT VERSION
+====================================
+
+START THE WEBSITE
+-----------------
+1. Extract the ZIP completely.
+2. Double-click: OPEN WEBSITE IN EDGE.bat
+   (or just double-click index.html)
+
+NO PYTHON. NO DOCKER. NO NODE. NO DATABASE. NO SERVER REQUIRED.
+
+MAIN FILES TO EDIT
+------------------
+index.html       = Home page
+stores.html      = Our Stores
+categories.html  = Categories
+specials.html    = Specials
+about.html       = About
+contact.html     = Contact
+
+assets/styles.css       = ALL colors, fonts, sizing, spacing, buttons, layout
+assets/app.js           = age gate, mobile menu, category popups, contact form behavior
+assets/images/          = all website photographs
+
+FASTEST WAY TO CHANGE THINGS
+-----------------------------
+Text:
+Open the relevant .html file in Notepad, Notepad++, VS Code, etc.
+Use Ctrl+F to find the text you want to change.
+Save the file, then refresh Edge (Ctrl+R).
+
+Images:
+Replace a JPG in assets/images/ with your new image using the SAME filename.
+The page will automatically use the replacement image.
+
+Colors / fonts:
+Edit the variables at the top of assets/styles.css.
+
+Business contact details:
+Use Find/Replace in the whole folder for the current phone number and addresses.
+Current details:
+New Caney: 1710 Roman Forest Blvd, New Caney, TX 77357
+Tomball: 16143 N Eldridge Parkway, Ste 6, Tomball, TX 77377
+Phone: 346-643-0079
+
+CONTACT FORM
+------------
+This version is deliberately server-free. The form is visual and does not save
+customer messages. To make it open the store email program automatically, open
+assets/app.js and change:
+
+  const CONTACT_EMAIL = '';
+
+to the real store email address.
+
+AGE GATE
+--------
+The 21+ confirmation is stored in the browser's local storage. To see it again,
+clear local storage for the local file/site in Edge or use a new browser profile.
+
+IMPORTANT
+---------
+This package is the easy-to-edit local visual version. It is intended for design,
+content changes, review, and direct opening in Edge. For a production deployment
+with a real contact inbox/database, the original server-backed project is the
+appropriate backend foundation.
